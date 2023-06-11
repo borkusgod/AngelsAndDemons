@@ -199,7 +199,7 @@ dem_name_list = {
     },
     "presidents": {
         "barbas": {
-            "alt_name": ("barbatos")
+            "alt_name": "barbatos",
             "ang_eq": "cahethel"
         },
         "buer": {
@@ -233,7 +233,7 @@ dem_name_list = {
             "ang_eq": "nemamiah"
         },
         "amy": {
-            "alt_name": ("auns", "avnas")
+            "alt_name": ("auns", "avnas"),
             "ang_eq": "ieialel"
         },
         "valac": {
