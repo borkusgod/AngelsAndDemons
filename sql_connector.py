@@ -1,4 +1,3 @@
-# https://www.datacamp.com/tutorial/sqlalchemy-tutorial-examples
 import sqlalchemy as sqa
 
 engine = sqa.create_engine('sqlite:///ars_goetia_demons.sqlite')
@@ -23,14 +22,6 @@ Ars_Goetia_demons = sqa.Table('Ars_Goetia_demons', metadata,
                                          nullable=False)
                               )
 
-metadata.create_all(engine)
 
-query = sqa.insert(Ars_Goetia_demons).values(Name='Eligos',
-                                             # Number='24',
-                                             Type='Duke',
-                                             Alt_Names='Eligor',
-                                             Angel_Equivalent='habuiah'
-                                             )
-Result = conn.execute(query)
 output = conn.execute(Ars_Goetia_demons.select()).fetchall()
 print(output)

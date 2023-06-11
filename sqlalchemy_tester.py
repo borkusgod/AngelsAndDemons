@@ -13,3 +13,14 @@ Student = sqa.Table('Student', metadata,
                     )
 
 metadata.create_all(engine)
+
+query = sqa.insert(Student).values(Id=1, Name='Matthew', Major="English",
+                                   Pass=True)
+Result = conn.execute(query)
+
+output = conn.execute(Student.select()).fetchall()
+print(output)
+
+# metadata = sqa.MetaData()  # extracting the metadata
+# division = sqa.Table('divisions', metadata, autoload=True,
+#                      autoload_with=engine)  # Table object
