@@ -4,42 +4,54 @@
 dem_name_list = {
     "king": {
         "bael": {
-            "ang_eq": "hehuiah"
+            "ang_eq": "hehuiah",
+            "ars_number": "1"
         },
         "paimon": {
-            "ang_eq": "haziel"
+            "ang_eq": "haziel",
+            "ars_number": "9"
         },
         "beleth": {
-            "ang_eq": "izalel"
+            "ang_eq": "izalel",
+            "ars_number": "13"
         },
         "purson": {
-            "ang_eq": "pahaliah"
+            "ang_eq": "pahaliah",
+            "ars_number": "20"
         },
         "asmodeus": {
-            "ang_eq": "vasariah"
+            "ang_eq": "vasariah",
+            "ars_number": "32"
         },
         "vine": {
-            "ang_eq": "sealiah"
+            "ang_eq": "sealiah",
+            "ars_number": "45"
         },
         "balam": {
-            "ang_eq": "hahasiah"
+            "ang_eq": "hahasiah",
+            "ars_number": "51"
         },
         "zagan": {
-            "ang_eq": "vmabel"
+            "ang_eq": "vmabel",
+            "ars_number": "61"
         },
         "belial": {
-            "ang_eq": "habuiah"
+            "ang_eq": "habuiah",
+            "ars_number": "68"
         }
     },
     "duke": {
         "amduscias": {
-            "ang_eq": "eiael"
+            "ang_eq": "eiael",
+            "ars_number": "67"
         },
         "agares": {
-            "ang_eq": "ielial"
+            "ang_eq": "ielial",
+            "ars_number": "2"
         },
         "valefar": {
-            "ang_eq": "iehahel"
+            "ang_eq": "iehahel",
+            "ars_number": "6"
         },
         "barbatos": {
             "ang_eq": "cahethel"
@@ -246,12 +258,4 @@ print(dem_name_list["king"])
 print('\n')
 print(dem_name_list["king"]["bael"])
 print('\n')
-x = dem_name_list.get("")
-# print(dem_name_list["duke"])
-# print('\n')
-# print(dem_name_list["prince"])
-# print('\n')
-# print(dem_name_list["marquis"])
-# print('\n')
-# dict2list = list(dem_name_list.items())
-# print(dict2list)
+
