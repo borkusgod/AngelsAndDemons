@@ -34,3 +34,4 @@ add_sing_entry = sqa.insert(Ars_Goetia_demons).values(Name='Eligos',
 Result = conn.execute(add_sing_entry)
 output = conn.execute(Ars_Goetia_demons.select()).fetchall()
 print(output)
+
