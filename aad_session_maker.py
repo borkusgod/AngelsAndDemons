@@ -42,3 +42,13 @@ session.commit()
 demon2 = Demon("Kimaris", "36", "Marquis", "Cimeies", "mavakel")
 session.add(demon2)
 session.commit()
+
+# testing for inputs into the system
+get_name = input("Please type the name of the Demon: ")
+get_number = input("What is the number of the Demon:? ")
+get_type = input("What government does it hold? ")
+get_altnames = input("Enter an alternative name for it: ")
+get_ang_ev = input("The opposing angel is? ")
+dem_inp = Demon(get_name, get_number, get_type, get_altnames, get_ang_ev)
+session.add(dem_inp)
+session.commit()
