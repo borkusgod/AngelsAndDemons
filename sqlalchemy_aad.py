@@ -26,12 +26,11 @@ Ars_Goetia_demons = sqa.Table('Ars_Goetia_demons', metadata,
 metadata.create_all(engine)
 
 add_sing_entry = sqa.insert(Ars_Goetia_demons).values(Name='Eligos',
-                                             # Number='24',
-                                             Type='Duke',
-                                             Alt_Names='Eligor',
-                                             Angel_Equivalent='habuiah'
-                                             )
+                                                      # Number='24',
+                                                      Type='Duke',
+                                                      Alt_Names='Eligor',
+                                                      Angel_Equivalent='habuiah'
+                                                      )
 Result = conn.execute(add_sing_entry)
 output = conn.execute(Ars_Goetia_demons.select()).fetchall()
 print(output)
-
