@@ -2,7 +2,8 @@ from sqlalchemy import create_engine, Column, String, MetaData
 from sqlalchemy.orm import sessionmaker
 
 # Create an engine
-engine = create_engine('sqlite:///ars_draft2.db')
+# engine = create_engine('sqlite:///ars_draft2.db')
+engine = create_engine('sqlite:///weather_data.sqlite')
 
 # Connect to the database
 conn = engine.connect()
@@ -24,12 +25,11 @@ for table_name, table in metadata.tables.items():
     column_names = table.columns.keys()
     print("Column names: ")
     print(column_names)
-    # Fetch and print the data
-    for row in result:
-        print(row)
-        for each_ in row:
-            print(each_)
-        print("\n")
+    # for row in result:
+    #     print(row)
+    #     for each_ in row:
+    #         print(each_)
+    #     print("\n")
 
 
 # Close the connection
